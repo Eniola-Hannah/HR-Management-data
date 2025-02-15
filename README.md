@@ -1,22 +1,26 @@
 # HR Data Analysis with SQL
 
+
 ![hr](https://github.com/user-attachments/assets/6f54b6fe-b715-4818-b23d-041a507308a8)
+
 
 ## Table Of Contents
 - [Introduction](#Introduction)
-- [Project Overview](#Project-Overview)
+- [Data Overview](#Data-Overview)
 - [Project Objective](#Project-Objective)
-- [Data Cleaning](#Data-Cleaning-and-Transformation)
-- [Data Exploration and Insights](#Data-Exploration-and-Insights)
+- [Data Cleaning](#Data-Overview)
+- [Data Exploration and Insights](#Insights-Derivation)
 - [Recommendation](#Recommendation)
 - [Files Details](#Files-Details)
 - [Conclusion](#Conclusion)
+
 
 ## Introduction
 This project involves analyzing HR management data to uncover insights that support informed decision-making and strategic workforce planning. 
 Using SQL, the dataset was queried to answer specific HR-related questions, exploring metrics such as employee demographics, tenure, turnover rates, and more.
 
-## Project-Overview
+
+## Data-Overview
 Dataset Description: The dataset provides comprehensive HR information, including employee demographics, work location, employment status, and tenure details.
 
 Number of Rows & Columns Before Cleaning:
@@ -55,7 +59,8 @@ Columns Included:
 12. What is the average length of employment in the company? 
 13. Which department has the highest turnover rate?
 
-## Data-Cleaning-and-Transformation
+
+## Data-Cleaning
 - Renaming the Table name
 ```sql
 RENAME TABLE `hr data` to hr_data;
@@ -105,3 +110,34 @@ ADD COLUMN Tenure_in_year INT;
 UPDATE hr_data
 SET Tenure_in_year = CEIL(DATEDIFF(CURRENT_DATE(), hire_date)/365);
 ```
+
+
+## Insights-Derivation
+1. Gender Breakdown: More Males than Females with just a difference of 967, with 605 number of Non-conforming genders.
+2. Remote Employees by Department: Engineering has the highest number of remote workers (1616), other departments less than a thousand.
+3. Work Location Distribution: 75% work at HQ, while 25% work remotely.
+4. Race Distribution: Diverse workforce with no dominant race category.
+5. State Distribution: Employees are spread across 7 states, with the majority in Ohio and Pennsylvania.
+6. Terminated Employees: 2662 employee's contract have been terminated.
+7. Longest Serving Employees: 220 employees with 25 years of service (hired in year 2000).
+8. Terminated Employees by Race: White employee has the highest terminations.
+9. Age Distribution: Majority of employees are aged between 30-39.
+10. Hiring Trends: Hiring peaked in 2000 - 2005.
+11. Tenure by Department: Auditing has the highest average tenure (16.0).
+12. Average Length of Employment: 14.30 years.
+
+
+## Recommendation
+- Diversity and Inclusion: Continue promoting diversity across all levels.
+- Remote Work Policy: Expand remote work opportunities in departments with high remote engagement.
+- Career Development: Focus on career advancement for younger employees to maintain engagement.
+
+
+## Files-Details
+- HR Data.csv: Contains the raw HR dataset used for the analysis.
+- hr_data_project.sql: Contains the SQL queries used to perform the analysis and derive insights.
+- HR practice Question.docx: Document outlining the problem statement and objectives for the project
+
+
+## Conclusion
+This analysis provides valuable insights into the company's workforce demographics, tenure patterns, and turnover trends. These insights can be leveraged to enhance HR strategies, improve employee retention, and support strategic decision-making.
