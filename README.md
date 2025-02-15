@@ -43,7 +43,7 @@ Columns Included:
 13. location_state: The state of the city the employee resides in.
 
 
-## Project-Objectives
+## Project-Objective
 - Problem Statement
 1. What is the gender breakdown in the Company? 
 2. How many employees work remotely for each department? 
