@@ -42,6 +42,9 @@ Columns Included:
 12. location_city: the city the employee resides in
 13. location_state: The state of the city the employee resides in.
 
+<img width="941" alt="hr" src="https://github.com/user-attachments/assets/7f34e8c4-065c-407b-9488-54e42c05bdf1" />
+
+
 
 ## Project-Objective
 - Problem Statement
