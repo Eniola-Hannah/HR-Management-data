@@ -11,7 +11,7 @@
 - [Data Cleaning](#Data-Cleaning)
 - [Insights Derivation](#Insights-Derivation)
 - [Recommendation](#Recommendation)
-- [Files Details](#Files-Details)
+- [Repository Contents](#Repository-Contents)
 - [Conclusion](#Conclusion)
 
 
@@ -133,7 +133,7 @@ SET Tenure_in_year = CEIL(DATEDIFF(CURRENT_DATE(), hire_date)/365);
 - Career Development: Focus on career advancement for younger employees to maintain engagement.
 
 
-## Files-Details
+## Repository-Contents
 - HR Data.csv: Contains the raw HR dataset used for the analysis.
 - hr_data_project.sql: Contains the SQL queries used to perform the analysis and derive insights.
 - HR practice Question.docx: Document outlining the problem statement and objectives for the project
